@@ -1,4 +1,8 @@
-﻿Console.WriteLine(Time(7000));
+﻿using ConsoleApp1;
+
+int[] array = new int[] { 2, 4, 6, 36 };
+
+Console.WriteLine(Time(7000));
 
 int[][] ratings = new int[][] {
     new int[] { 522, 3 }, new int[] { 123, 5},
