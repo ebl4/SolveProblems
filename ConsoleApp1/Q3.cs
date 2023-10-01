@@ -21,16 +21,19 @@
 
         }
 
-        public static void visit(int[][] variacoes, int i)
+        public static void visit(int[][] variacoes, int i, string pai)
         {
             if (i < variacoes.Length)
             {
                 for (int j = 0; j < variacoes[i].Length; j++)
                 {
-                    Console.Write(variacoes[i][j]);
-                    visit(variacoes, i + 1);
+                    if (pai.Length >= variacoes.Length - 1)
+                        Console.Write(pai + variacoes[i][j]);
+                    visit(variacoes, i + 1, pai + variacoes[i][j]);
                 }
             }
+            if (i >= variacoes.Length)
+                Console.WriteLine();
         }
 
         public static void AllPinVariations(string input)
@@ -42,11 +45,11 @@
 
             for (int i = 0; i < inputSize; i++)
             {
-                int digit = (int)input[i]-48;
+                int digit = (int)input[i] - 48;
                 variacoes[i] = adjList[digit];
             }
 
-            visit(variacoes, 0);
+            visit(variacoes, 0, "");
         }
     }
 }

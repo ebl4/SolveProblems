@@ -12,7 +12,7 @@
 //Console.WriteLine(HighestAvg(4, ratings));
 //SameMiddle();
 
-Q3.AllPinVariations("11");
+Q3.AllPinVariations("111");
 
 
 // URL Question: https://www.hackerearth.com/practice/basic-programming/implementation/basics-of-implementation/practice-problems/algorithm/equal-median-8aba723b/
