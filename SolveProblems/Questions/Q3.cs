@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1
+﻿namespace ConsoleApp1.Questions
 {
     // 0 -> 0, 8
     // 1 -> 1, 2, 4
@@ -45,7 +45,7 @@
 
             for (int i = 0; i < inputSize; i++)
             {
-                int digit = (int)input[i] - 48;
+                int digit = input[i] - 48;
                 variacoes[i] = adjList[digit];
             }
 

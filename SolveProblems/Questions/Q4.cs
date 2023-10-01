@@ -1,10 +1,10 @@
-﻿namespace ConsoleApp1
+﻿namespace ConsoleApp1.Questions
 {
-    public class Q2
+    public class Q4
     {
         public static bool CubeRoot(int n)
         {
-            for (int i = 0; i < n/2; i++)
+            for (int i = 0; i < n / 2; i++)
             {
                 if (i * i * i == n) return true;
             }
