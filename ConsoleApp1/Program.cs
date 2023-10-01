@@ -1,16 +1,18 @@
 ﻿using ConsoleApp1;
 
-int[] array = new int[] { 2, 4, 6, 36 };
+//int[] array = new int[] { 2, 4, 6, 36 };
 
-Console.WriteLine(Time(7000));
+//Console.WriteLine(Time(7000));
 
-int[][] ratings = new int[][] {
-    new int[] { 522, 3 }, new int[] { 123, 5},
-    new int[] { 123, 1}, new int[] { 234, 2}
-};
+//int[][] ratings = new int[][] {
+//    new int[] { 522, 3 }, new int[] { 123, 5},
+//    new int[] { 123, 1}, new int[] { 234, 2}
+//};
 
-Console.WriteLine(HighestAvg(4, ratings));
-SameMiddle();
+//Console.WriteLine(HighestAvg(4, ratings));
+//SameMiddle();
+
+Q3.AllPinVariations("11");
 
 
 // URL Question: https://www.hackerearth.com/practice/basic-programming/implementation/basics-of-implementation/practice-problems/algorithm/equal-median-8aba723b/
