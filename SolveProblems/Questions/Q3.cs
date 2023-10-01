@@ -12,6 +12,7 @@
     // 9 -> 6, 8, 9
     public class Q3
     {
+        static int index = 0;
         public static int[][] getAdjacentList()
         {
             return new int[][] { new int[] { 0, 8 }, new int[] { 1, 2, 4 },
@@ -21,19 +22,25 @@
 
         }
 
-        public static void visit(int[][] variacoes, int i, string pai)
+        public static void visit(int[][] variacoes, int i, string pai, string[] resp)
         {
             if (i < variacoes.Length)
             {
                 for (int j = 0; j < variacoes[i].Length; j++)
                 {
                     if (pai.Length >= variacoes.Length - 1)
-                        Console.Write(pai + variacoes[i][j]);
-                    visit(variacoes, i + 1, pai + variacoes[i][j]);
+                    {
+                        resp[index] += pai + variacoes[i][j];
+                    }
+
+                    visit(variacoes, i + 1, pai + variacoes[i][j], resp);
                 }
             }
             if (i >= variacoes.Length)
-                Console.WriteLine();
+            {
+                index++;
+            }
+
         }
 
         public static void AllPinVariations(string input)
@@ -42,14 +49,23 @@
             var inputSize = input.Length;
 
             var variacoes = new int[inputSize][];
+            var respSize = 1;
 
             for (int i = 0; i < inputSize; i++)
             {
                 int digit = input[i] - 48;
                 variacoes[i] = adjList[digit];
+                respSize *= variacoes[i].Length;
             }
 
-            visit(variacoes, 0, "");
+            var resp = new string[respSize];
+
+            visit(variacoes, 0, "", resp);
+
+            foreach(var r in resp)
+            {
+                Console.WriteLine(r);
+            }
         }
     }
 }
