@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.Questions
+﻿namespace SolveProblems.Questions
 {
     public class Q1
     {

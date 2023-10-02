@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.Questions
+﻿namespace SolveProblems.Questions
 {
     // 0 -> 0, 8
     // 1 -> 1, 2, 4
