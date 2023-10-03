@@ -19,6 +19,7 @@ var singers = new long[] { 1, 1, 2, 2, 3, 3, 4 };
 
 //Q5.SameMiddle();
 
-Console.WriteLine(Q6.FavouriteSinger(singers.Length, singers));
+//Console.WriteLine(Q6.FavouriteSinger(singers.Length, singers));
+//Console.WriteLine(Q7.Solve(2, 15));
 
 
