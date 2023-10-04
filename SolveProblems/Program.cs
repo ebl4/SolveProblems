@@ -7,7 +7,9 @@ int[][] ratings = new int[][] {
 
 int[] array = new int[] { 2, 4, 6, 36 };
 
-var singers = new long[] { 1, 1, 2, 2, 3, 3, 4 };
+var singers = new int[] { 0, 1, 2, 2, 3, 3, 4 };
+
+
 
 //Console.WriteLine(Q1.HighestAvg(4, ratings));
 
